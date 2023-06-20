@@ -1,0 +1,32 @@
+\doxysection{approx\+\_\+t.\+h}
+\hypertarget{approx__t_8h_source}{}\label{approx__t_8h_source}\mbox{\hyperlink{approx__t_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ APPROX\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structapprox__t_abe1936a9b9c2414fe3ea11741bb58837}{lo}};\textcolor{comment}{//левая граница}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structapprox__t_a4cbec1cde40673c5747044d014135c9f}{hi}};\textcolor{comment}{//правая\ граница}}
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{structapprox__t}{approx\_t}};}
+\DoxyCodeLine{00034\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_af9378e72231fd858e1f2477701978e98}{ApproxFromDouble}}(\textcolor{keywordtype}{double}\ center,\ \textcolor{keywordtype}{double}\ radius);}
+\DoxyCodeLine{00043\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_af0b90345752fbebdaec4ff08fa0153a5}{ApproxFromRange}}(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{approx__t_8h_aa0840fe04cb63b5f589af5ac5aba2451}{ApproxDestroy}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}*\ approx);}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{approx__t_8h_a1be89697a59a536c4927fbfd862cf2c5}{ApproxAsDouble}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx);}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{approx__t_8h_a6ea5c442dbe70a50e842d162a0f94a67}{ApproxGetRadius}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx);}
+\DoxyCodeLine{00074\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a9b7fa0ab9bcf0172f43a96efd0694364}{ApproxParse}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{approx__t_8h_a2f448a9299b4fe1b06dd35e7c920cb58}{ApproxFormat}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx,\ \textcolor{keywordtype}{char}*\ buf,\ \textcolor{keywordtype}{size\_t}\ bufsize);}
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{approx__t_8h_ac9eb3de5a2a7bc74abd7237433becd45}{ApproxRead}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}*\ approx,\ FILE*\ fp);}
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{approx__t_8h_a2e05b88724cecf4370a344060c9d502b}{ApproxWrite}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx,\ FILE*\ fp);}
+\DoxyCodeLine{00113\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_ad2bae97d6230e724bb0baaa12d480eb5}{ApproxAdd}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ a,\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ b);}
+\DoxyCodeLine{00122\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a5cdb547a1b690e24642a590e568c2918}{ApproxSub}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ a,\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ b);}
+\DoxyCodeLine{00130\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a5e1b8e30b6508e70ec7188988d6408c0}{ApproxMul}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ a,\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ b);}
+\DoxyCodeLine{00139\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a1311141277952e92a6faa2b812083d48}{ApproxDiv}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ a,\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ b);}
+\DoxyCodeLine{00147\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a07c6f41fac44fe6e5939589f931dc1ba}{ApproxNegate}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx);}
+\DoxyCodeLine{00155\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ \mbox{\hyperlink{approx__t_8h_a21ad59f6f5de7ee55cc052305c49c39b}{ApproxAbs}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ approx);}
+\DoxyCodeLine{00164\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{approx__t_8h_a2eb9ff1ced225718e44f7f1aedcffcce}{ApproxCompare}}(\mbox{\hyperlink{structapprox__t}{approx\_t}}\ a,\ \mbox{\hyperlink{structapprox__t}{approx\_t}}\ b);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+
+\end{DoxyCode}

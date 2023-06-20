@@ -1,0 +1,364 @@
+\doxysection{approx\+\_\+t.\+h File Reference}
+\hypertarget{approx__t_8h}{}\label{approx__t_8h}\index{approx\_t.h@{approx\_t.h}}
+
+
+Структура, представляющая приблизительное число.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Структура, представляющая приблизительное число. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_af9378e72231fd858e1f2477701978e98}{Approx\+From\+Double}} (double center, double radius)
+\begin{DoxyCompactList}\small\item\em Создает приблизительное число из центра и радиуса. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_af0b90345752fbebdaec4ff08fa0153a5}{Approx\+From\+Range}} (double value)
+\begin{DoxyCompactList}\small\item\em Создает приближенное число из левой и правой границы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{approx__t_8h_aa0840fe04cb63b5f589af5ac5aba2451}{Approx\+Destroy}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \texorpdfstring{$\ast$}{*}approx)
+\begin{DoxyCompactList}\small\item\em Уничтожение приближенного числа. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{approx__t_8h_a1be89697a59a536c4927fbfd862cf2c5}{Approx\+As\+Double}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx)
+\begin{DoxyCompactList}\small\item\em Получает центр приблизительного числа. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{approx__t_8h_a6ea5c442dbe70a50e842d162a0f94a67}{Approx\+Get\+Radius}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx)
+\begin{DoxyCompactList}\small\item\em Получает радиус приближенного числа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a9b7fa0ab9bcf0172f43a96efd0694364}{Approx\+Parse}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Разбирает строку и возвращает соответствующее приблизительное число. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{approx__t_8h_a2f448a9299b4fe1b06dd35e7c920cb58}{Approx\+Format}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx, char \texorpdfstring{$\ast$}{*}buf, size\+\_\+t bufsize)
+\begin{DoxyCompactList}\small\item\em Форматирует приблизительное число в виде строки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{approx__t_8h_ac9eb3de5a2a7bc74abd7237433becd45}{Approx\+Read}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \texorpdfstring{$\ast$}{*}approx, FILE \texorpdfstring{$\ast$}{*}fp)
+\begin{DoxyCompactList}\small\item\em Считывание приблизительного числа из файла. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{approx__t_8h_a2e05b88724cecf4370a344060c9d502b}{Approx\+Write}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx, FILE \texorpdfstring{$\ast$}{*}fp)
+\begin{DoxyCompactList}\small\item\em Записывает приблизительное число в файл. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_ad2bae97d6230e724bb0baaa12d480eb5}{Approx\+Add}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} a, \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} b)
+\begin{DoxyCompactList}\small\item\em Складывает два приближенных числа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a5cdb547a1b690e24642a590e568c2918}{Approx\+Sub}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} a, \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} b)
+\begin{DoxyCompactList}\small\item\em Вычитание двух приближенных чисел. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a5e1b8e30b6508e70ec7188988d6408c0}{Approx\+Mul}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} a, \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} b)
+\begin{DoxyCompactList}\small\item\em Перемножает два приближенных числа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a1311141277952e92a6faa2b812083d48}{Approx\+Div}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} a, \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} b)
+\begin{DoxyCompactList}\small\item\em Делит два приближенных числа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a07c6f41fac44fe6e5939589f931dc1ba}{Approx\+Negate}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx)
+\begin{DoxyCompactList}\small\item\em Отрицание приближенного числа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \mbox{\hyperlink{approx__t_8h_a21ad59f6f5de7ee55cc052305c49c39b}{Approx\+Abs}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} approx)
+\begin{DoxyCompactList}\small\item\em Получает абсолютное значение приближенного числа. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{approx__t_8h_a2eb9ff1ced225718e44f7f1aedcffcce}{Approx\+Compare}} (\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} a, \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} b)
+\begin{DoxyCompactList}\small\item\em Сравнивает два приближенных числа. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Структура, представляющая приблизительное число. 
+
+Приблизительное число представляет собой пару чисел, представляющих нижнюю и верхнюю границы числа. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{approx__t_8h_a21ad59f6f5de7ee55cc052305c49c39b}\label{approx__t_8h_a21ad59f6f5de7ee55cc052305c49c39b} 
+\index{approx\_t.h@{approx\_t.h}!ApproxAbs@{ApproxAbs}}
+\index{ApproxAbs@{ApproxAbs}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxAbs()}{ApproxAbs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx }\end{DoxyParamCaption})}
+
+
+
+Получает абсолютное значение приближенного числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число, для которого нужно получить абсолютное значение.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Абсолютное значение приблизительного числа. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_ad2bae97d6230e724bb0baaa12d480eb5}\label{approx__t_8h_ad2bae97d6230e724bb0baaa12d480eb5} 
+\index{approx\_t.h@{approx\_t.h}!ApproxAdd@{ApproxAdd}}
+\index{ApproxAdd@{ApproxAdd}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxAdd()}{ApproxAdd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Складывает два приближенных числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое приближенное число. \\
+\hline
+{\em b} & Второе приближенное число.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Сумма двух приближенных чисел. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a1be89697a59a536c4927fbfd862cf2c5}\label{approx__t_8h_a1be89697a59a536c4927fbfd862cf2c5} 
+\index{approx\_t.h@{approx\_t.h}!ApproxAsDouble@{ApproxAsDouble}}
+\index{ApproxAsDouble@{ApproxAsDouble}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxAsDouble()}{ApproxAsDouble()}}
+{\footnotesize\ttfamily double Approx\+As\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx }\end{DoxyParamCaption})}
+
+
+
+Получает центр приблизительного числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число, центр которого нужно получить.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Центр приблизительного числа. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a2eb9ff1ced225718e44f7f1aedcffcce}\label{approx__t_8h_a2eb9ff1ced225718e44f7f1aedcffcce} 
+\index{approx\_t.h@{approx\_t.h}!ApproxCompare@{ApproxCompare}}
+\index{ApproxCompare@{ApproxCompare}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxCompare()}{ApproxCompare()}}
+{\footnotesize\ttfamily int Approx\+Compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Сравнивает два приближенных числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое приближенное число. \\
+\hline
+{\em b} & Второе приближенное число.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1, если a \texorpdfstring{$<$}{<} b, 0, если a == b, и 1, если a \texorpdfstring{$>$}{>} b. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_aa0840fe04cb63b5f589af5ac5aba2451}\label{approx__t_8h_aa0840fe04cb63b5f589af5ac5aba2451} 
+\index{approx\_t.h@{approx\_t.h}!ApproxDestroy@{ApproxDestroy}}
+\index{ApproxDestroy@{ApproxDestroy}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxDestroy()}{ApproxDestroy()}}
+{\footnotesize\ttfamily void Approx\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{approx }\end{DoxyParamCaption})}
+
+
+
+Уничтожение приближенного числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число для уничтожения. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{approx__t_8h_a1311141277952e92a6faa2b812083d48}\label{approx__t_8h_a1311141277952e92a6faa2b812083d48} 
+\index{approx\_t.h@{approx\_t.h}!ApproxDiv@{ApproxDiv}}
+\index{ApproxDiv@{ApproxDiv}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxDiv()}{ApproxDiv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Div (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Делит два приближенных числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое приближенное число. \\
+\hline
+{\em b} & Второе приближенное число.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Коэффициент двух приближенных чисел. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a2f448a9299b4fe1b06dd35e7c920cb58}\label{approx__t_8h_a2f448a9299b4fe1b06dd35e7c920cb58} 
+\index{approx\_t.h@{approx\_t.h}!ApproxFormat@{ApproxFormat}}
+\index{ApproxFormat@{ApproxFormat}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxFormat()}{ApproxFormat()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Approx\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx,  }\item[{char \texorpdfstring{$\ast$}{*}}]{buf,  }\item[{size\+\_\+t}]{bufsize }\end{DoxyParamCaption})}
+
+
+
+Форматирует приблизительное число в виде строки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число для форматирования. \\
+\hline
+{\em buf} & Буфер для записи отформатированного приблизительного числа. \\
+\hline
+{\em bufsize} & Размер буфера.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на отформатированное приблизительное число в буфере. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_af9378e72231fd858e1f2477701978e98}\label{approx__t_8h_af9378e72231fd858e1f2477701978e98} 
+\index{approx\_t.h@{approx\_t.h}!ApproxFromDouble@{ApproxFromDouble}}
+\index{ApproxFromDouble@{ApproxFromDouble}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxFromDouble()}{ApproxFromDouble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+From\+Double (\begin{DoxyParamCaption}\item[{double}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})}
+
+
+
+Создает приблизительное число из центра и радиуса. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & Центр приближенного числа. \\
+\hline
+{\em radius} & Радиус приближенного числа.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Приближенное число с заданными центром и радиусом. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_af0b90345752fbebdaec4ff08fa0153a5}\label{approx__t_8h_af0b90345752fbebdaec4ff08fa0153a5} 
+\index{approx\_t.h@{approx\_t.h}!ApproxFromRange@{ApproxFromRange}}
+\index{ApproxFromRange@{ApproxFromRange}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxFromRange()}{ApproxFromRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+From\+Range (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Создает приближенное число из левой и правой границы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lo} & Левая граница приближенного числа. \\
+\hline
+{\em hi} & Правая граница приближенного числа.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Приближенное число с указанными левой и правой границами. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a6ea5c442dbe70a50e842d162a0f94a67}\label{approx__t_8h_a6ea5c442dbe70a50e842d162a0f94a67} 
+\index{approx\_t.h@{approx\_t.h}!ApproxGetRadius@{ApproxGetRadius}}
+\index{ApproxGetRadius@{ApproxGetRadius}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxGetRadius()}{ApproxGetRadius()}}
+{\footnotesize\ttfamily double Approx\+Get\+Radius (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx }\end{DoxyParamCaption})}
+
+
+
+Получает радиус приближенного числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число для получения радиуса.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Радиус приближенного числа. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a5e1b8e30b6508e70ec7188988d6408c0}\label{approx__t_8h_a5e1b8e30b6508e70ec7188988d6408c0} 
+\index{approx\_t.h@{approx\_t.h}!ApproxMul@{ApproxMul}}
+\index{ApproxMul@{ApproxMul}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxMul()}{ApproxMul()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Mul (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Перемножает два приближенных числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое приближенное число. \\
+\hline
+{\em b} & Второе приближенное число. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Произведение двух приближенных чисел 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a07c6f41fac44fe6e5939589f931dc1ba}\label{approx__t_8h_a07c6f41fac44fe6e5939589f931dc1ba} 
+\index{approx\_t.h@{approx\_t.h}!ApproxNegate@{ApproxNegate}}
+\index{ApproxNegate@{ApproxNegate}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxNegate()}{ApproxNegate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Negate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx }\end{DoxyParamCaption})}
+
+
+
+Отрицание приближенного числа. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное отрицательоне число.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отрицание приблизительного числа. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a9b7fa0ab9bcf0172f43a96efd0694364}\label{approx__t_8h_a9b7fa0ab9bcf0172f43a96efd0694364} 
+\index{approx\_t.h@{approx\_t.h}!ApproxParse@{ApproxParse}}
+\index{ApproxParse@{ApproxParse}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxParse()}{ApproxParse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Parse (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+
+
+Разбирает строку и возвращает соответствующее приблизительное число. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Строка для разбора.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Приблизительное число, соответствующее строке, или приблизительное число с границами (0.\+0, 0.\+0), если строка не может быть разобрана. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_ac9eb3de5a2a7bc74abd7237433becd45}\label{approx__t_8h_ac9eb3de5a2a7bc74abd7237433becd45} 
+\index{approx\_t.h@{approx\_t.h}!ApproxRead@{ApproxRead}}
+\index{ApproxRead@{ApproxRead}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxRead()}{ApproxRead()}}
+{\footnotesize\ttfamily int Approx\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{approx,  }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp }\end{DoxyParamCaption})}
+
+
+
+Считывание приблизительного числа из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & Файл для чтения из файла. \\
+\hline
+{\em approx} & Приблизительное число для чтения.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, если приблизительное число было считано успешно, 0, если был достигнут конец файла, или -\/1, если был достигнут конец файла. файл был достигнут, или -\/1, если произошла ошибка. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a5cdb547a1b690e24642a590e568c2918}\label{approx__t_8h_a5cdb547a1b690e24642a590e568c2918} 
+\index{approx\_t.h@{approx\_t.h}!ApproxSub@{ApproxSub}}
+\index{ApproxSub@{ApproxSub}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxSub()}{ApproxSub()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structapprox__t}{approx\+\_\+t}} Approx\+Sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Вычитание двух приближенных чисел. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Первое приближенное число. \\
+\hline
+{\em b} & Второе приближенное число.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Разность двух приближенных чисел. 
+\end{DoxyReturn}
+\Hypertarget{approx__t_8h_a2e05b88724cecf4370a344060c9d502b}\label{approx__t_8h_a2e05b88724cecf4370a344060c9d502b} 
+\index{approx\_t.h@{approx\_t.h}!ApproxWrite@{ApproxWrite}}
+\index{ApproxWrite@{ApproxWrite}!approx\_t.h@{approx\_t.h}}
+\doxysubsubsection{\texorpdfstring{ApproxWrite()}{ApproxWrite()}}
+{\footnotesize\ttfamily int Approx\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structapprox__t}{approx\+\_\+t}}}]{approx,  }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp }\end{DoxyParamCaption})}
+
+
+
+Записывает приблизительное число в файл. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em approx} & Приблизительное число для записи. \\
+\hline
+{\em fp} & Файл для записи.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, если приблизительное число было записано успешно, 0, если произошла ошибка. произошла. 
+\end{DoxyReturn}
